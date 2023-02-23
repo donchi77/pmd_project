@@ -58,9 +58,9 @@ public class SystemManager {
 
     public static String hashPasswd(String password) {
         Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id,
-                Argon2dParameters.DEFAULT_SALT_LENGTH, Argon2dParameters.DEFAULT_HASH_LENGTH);
+                Argon2Parameters.DEFAULT_SALT_LENGTH, Argon2Parameters.DEFAULT_HASH_LENGTH);
 
-        return argon2.hash(Argon2dParameters.ITERATIONS, Argon2dParameters.MEMORY,
-                Argon2dParameters.PARALLELISM, password.toCharArray());
+        return argon2.hash(Argon2Parameters.ITERATIONS, Argon2Parameters.MEMORY,
+                Argon2Parameters.PARALLELISM, password.toCharArray());
     }
 }

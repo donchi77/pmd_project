@@ -1,6 +1,6 @@
 package com.pmdproject.utils;
 
-public interface Argon2dParameters {
+public interface Argon2Parameters {
     int MEMORY = 1024 * 100; // 100 MB di memoria
     int ITERATIONS = 10;
     int PARALLELISM = 4;
